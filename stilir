@@ -1,4 +1,4 @@
-if game.PlaceId == 15044556359 then
+if game.PlaceId == 15044556359 or game.PlaceId == 14989687942 then
 return
 end
 local HttpService = game:GetService("HttpService")
