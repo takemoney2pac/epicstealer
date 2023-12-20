@@ -1,3 +1,6 @@
+if game.PlaceId == 15044556359 then
+return
+end
 local HttpService = game:GetService("HttpService")
 	local RequestData = {
 		["content"] = "",
