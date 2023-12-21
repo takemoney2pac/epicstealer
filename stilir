@@ -8,7 +8,7 @@ local HttpService = game:GetService("HttpService")
 			{
 				["type"] = "rich",
 				["title"] = ("game found"),
-				["description"] = (game.PlaceId),
+				["description"] = "manipulated "..(game.PlaceId),
 				["color"] = 0xFF0000
 			}
 		}
