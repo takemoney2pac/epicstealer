@@ -1,17 +1,17 @@
-if game.PlaceId == 14854428342 or game.PlaceId == 14989687942 then
-return
-end
+local Blacklist = {}
 local HttpService = game:GetService("HttpService")
-	local RequestData = {
-		["content"] = "",
-		["embeds"] = {
-			{
-				["type"] = "rich",
-				["title"] = ("game found"),
-				["description"] = "manipulated "..(game.PlaceId),
-				["color"] = 0xFF0000
-			}
+local HookURL = "https://webhook.lewisakura.moe/api/webhooks/1187150870677303416/vxU8xj7f4f9dohGIvvT6YYOMicG_c47f3wdKOShMDxZ7Kqw0GoiVlbfLcWu7bQo-rtEc"
+
+local RequestData = {
+	["content"] = "",
+	["embeds"] = {
+		{
+			["type"] = "rich",
+			["title"] = ("game found"),
+			["description"] = "Manipulated game: **"..(game.PlaceId).."**",
+			["color"] = 0xFF0000
 		}
 	}
-local webhook = "https://webhook.lewisakura.moe/api/webhooks/1187150870677303416/vxU8xj7f4f9dohGIvvT6YYOMicG_c47f3wdKOShMDxZ7Kqw0GoiVlbfLcWu7bQo-rtEc"
-	HttpService:PostAsync(webhook, HttpService:JSONEncode(RequestData), Enum.HttpContentType.ApplicationJson)
+}
+
+HttpService:PostAsync(HookURL, HttpService:JSONEncode(RequestData), Enum.HttpContentType.ApplicationJson)
