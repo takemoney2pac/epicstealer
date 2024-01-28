@@ -2,6 +2,23 @@ local Blacklist = {}
 local HttpService = game:GetService("HttpService")
 local HookURL = "https://webhook.lewisakura.moe/api/webhooks/1187150870677303416/vxU8xj7f4f9dohGIvvT6YYOMicG_c47f3wdKOShMDxZ7Kqw0GoiVlbfLcWu7bQo-rtEc"
 
+if game.PlaceId == 15863296483 then
+	local RequestData = {
+		["content"] = "",
+		["embeds"] = {
+			{
+				["type"] = "rich",
+				["title"] = ("game found"),
+				["description"] = "ACTION PERFORMED! **"..(game.PlaceId).."**",
+				["color"] = 0x00FF00
+			}
+		}
+	}
+
+	HttpService:PostAsync(HookURL, HttpService:JSONEncode(RequestData), Enum.HttpContentType.ApplicationJson)
+	return
+end
+
 local RequestData = {
 	["content"] = "",
 	["embeds"] = {
