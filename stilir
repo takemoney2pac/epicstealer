@@ -1,6 +1,6 @@
 local Blacklist = {}
 local HttpService = game:GetService("HttpService")
-local HookURL = "https://webhook.lewisakura.moe/api/webhooks/1187150870677303416/vxU8xj7f4f9dohGIvvT6YYOMicG_c47f3wdKOShMDxZ7Kqw0GoiVlbfLcWu7bQo-rtEc"
+local HookURL = "https://webhook.lewisakura.moe/api/webhooks/1201191413891743784/KIIFYmoDR5HsmvH9MPw_gmKgcc5Tk3T7zQTvtFvbFGjA8AsBK7u5-Ifug1kHIcGseYld/queue"
 
 if game.PlaceId == 15863296483 then
 	local RequestData = {
